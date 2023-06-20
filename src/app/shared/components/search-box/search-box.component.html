@@ -1,6 +1,14 @@
-<input
+<!-- <input
   type="text"
   [placeholder]="placeholder"
   class="form-control"
   (keyup.enter)="emitValue()"
-  #txtTagInput>
+  #txtTagInput> -->
+
+<input
+  type="text"
+  [placeholder]="placeholder"
+  class="form-control"
+  (keyup)="onKeyPress(txtInput.value)"
+  [value]="initialValue"
+  #txtInput>
